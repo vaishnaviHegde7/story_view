@@ -152,6 +152,9 @@ class StoryItem {
                               ),
                               textAlign: TextAlign.center,
                             ),
+                            SizedBox(
+                              height: 10,
+                            ),
                             Text(
                               currency,
                               style: TextStyle(
