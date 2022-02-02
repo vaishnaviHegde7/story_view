@@ -144,7 +144,7 @@ class StoryItem {
                       ? Text(
                           caption,
                           style: TextStyle(
-                            fontSize: 15,
+                            fontSize: 30,
                             color: Colors.white,
                           ),
                           textAlign: TextAlign.center,
