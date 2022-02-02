@@ -140,18 +140,16 @@ class StoryItem {
                     horizontal: 24,
                     vertical: 8,
                   ),
-                  color: caption != null && currency != null
-                      ? Colors.black54
-                      : Colors.transparent,
+                  color: caption != null ? Colors.black54 : Colors.transparent,
                   child: caption != null && currency != null
                       ? Column(
                           children: [
                             Text(
                               caption,
                               style: TextStyle(
-                                  fontSize: 15,
-                                  color: Colors.white,
-                                  fontFamily: "poppins"),
+                                fontSize: 15,
+                                color: Colors.white,
+                              ),
                               textAlign: TextAlign.center,
                             ),
                             SizedBox(
