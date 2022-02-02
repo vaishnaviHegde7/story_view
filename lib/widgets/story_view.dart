@@ -149,9 +149,9 @@ class StoryItem {
                             Text(
                               caption,
                               style: TextStyle(
-                                fontSize: 50,
-                                color: Colors.white,
-                              ),
+                                  fontSize: 50,
+                                  color: Colors.white,
+                                  fontFamily: "poppins"),
                               textAlign: TextAlign.center,
                             ),
                             SizedBox(
