@@ -110,8 +110,8 @@ class StoryItem {
     required StoryController controller,
     Key? key,
     BoxFit imageFit = BoxFit.fitWidth,
-    required String? caption,
-    required String? currency,
+    String? caption,
+    String? currency,
     bool shown = false,
     Map<String, dynamic>? requestHeaders,
     Duration? duration,
@@ -141,7 +141,7 @@ class StoryItem {
                     vertical: 8,
                   ),
                   color: caption != null ? Colors.black54 : Colors.transparent,
-                  child: caption != null && currency != null
+                  child: caption != null
                       ? Column(
                           children: [
                             Text(
@@ -156,7 +156,7 @@ class StoryItem {
                               height: 10,
                             ),
                             Text(
-                              currency,
+                              currency!,
                               style: TextStyle(
                                   fontSize: 24,
                                   color: Colors.white,
