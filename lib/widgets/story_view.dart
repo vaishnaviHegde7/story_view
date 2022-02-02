@@ -156,6 +156,9 @@ class StoryItem {
                                     fontFamily: "poppins"),
                                 textAlign: TextAlign.center,
                               ),
+                              SizedBox(
+                                height: 20,
+                              ),
                               Text(
                                 currency!,
                                 style: TextStyle(
