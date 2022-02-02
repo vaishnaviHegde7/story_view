@@ -149,7 +149,7 @@ class StoryItem {
                             Text(
                               caption,
                               style: TextStyle(
-                                fontSize: 26,
+                                fontSize: 50,
                                 color: Colors.white,
                               ),
                               textAlign: TextAlign.center,
