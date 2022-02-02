@@ -111,7 +111,6 @@ class StoryItem {
     Key? key,
     BoxFit imageFit = BoxFit.fitWidth,
     String? caption,
-    String? currency,
     bool shown = false,
     Map<String, dynamic>? requestHeaders,
     Duration? duration,
@@ -152,17 +151,6 @@ class StoryItem {
                               ),
                               textAlign: TextAlign.center,
                             ),
-                            SizedBox(
-                              height: 10,
-                            ),
-                            Text(
-                              currency!,
-                              style: TextStyle(
-                                  fontSize: 24,
-                                  color: Colors.white,
-                                  fontFamily: "poppins"),
-                              textAlign: TextAlign.center,
-                            )
                           ],
                         )
                       : SizedBox(),
