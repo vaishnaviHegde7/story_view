@@ -111,6 +111,7 @@ class StoryItem {
     Key? key,
     BoxFit imageFit = BoxFit.fitWidth,
     String? caption,
+    String? currency,
     bool shown = false,
     Map<String, dynamic>? requestHeaders,
     Duration? duration,
@@ -140,14 +141,26 @@ class StoryItem {
                     vertical: 8,
                   ),
                   color: caption != null ? Colors.black54 : Colors.transparent,
-                  child: caption != null
-                      ? Text(
-                          caption,
-                          style: TextStyle(
-                            fontSize: 30,
-                            color: Colors.white,
-                          ),
-                          textAlign: TextAlign.center,
+                  child: caption != null && currency != null
+                      ? Column(
+                          children: [
+                            Text(
+                              caption,
+                              style: TextStyle(
+                                fontSize: 26,
+                                color: Colors.white,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                            Text(
+                              currency,
+                              style: TextStyle(
+                                fontSize: 24,
+                                color: Colors.white,
+                              ),
+                              textAlign: TextAlign.center,
+                            )
+                          ],
                         )
                       : SizedBox(),
                 ),
