@@ -133,14 +133,14 @@ class StoryItem {
                 alignment: Alignment.bottomCenter,
                 child: Container(
                   width: double.infinity,
-                  margin: EdgeInsets.only(
-                    bottom: 24,
-                  ),
+                  // margin: EdgeInsets.only(
+                  //   bottom: 24,
+                  // ),
                   padding: EdgeInsets.symmetric(
                     horizontal: 24,
                     vertical: 8,
                   ),
-                  color: caption != null ? Colors.black54 : Colors.transparent,
+                  color: caption != null ? Colors.black : Colors.black,
                   child: caption != null
                       ? Align(
                           alignment: Alignment.bottomCenter,
