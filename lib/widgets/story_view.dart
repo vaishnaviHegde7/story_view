@@ -149,7 +149,7 @@ class StoryItem {
                             Text(
                               caption,
                               style: TextStyle(
-                                  fontSize: 50,
+                                  fontSize: 12,
                                   color: Colors.white,
                                   fontFamily: "poppins"),
                               textAlign: TextAlign.center,
@@ -160,9 +160,9 @@ class StoryItem {
                             Text(
                               currency,
                               style: TextStyle(
-                                fontSize: 24,
-                                color: Colors.white,
-                              ),
+                                  fontSize: 24,
+                                  color: Colors.white,
+                                  fontFamily: "poppins"),
                               textAlign: TextAlign.center,
                             )
                           ],
