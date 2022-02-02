@@ -140,7 +140,9 @@ class StoryItem {
                     horizontal: 24,
                     vertical: 8,
                   ),
-                  color: caption != null ? Colors.black54 : Colors.transparent,
+                  color: caption != null && currency != null
+                      ? Colors.black54
+                      : Colors.transparent,
                   child: caption != null && currency != null
                       ? Column(
                           children: [
