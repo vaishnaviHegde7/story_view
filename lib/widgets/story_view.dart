@@ -139,19 +139,15 @@ class StoryItem {
                     horizontal: 24,
                     vertical: 8,
                   ),
-                  color: caption != null ? Colors.white : Colors.transparent,
+                  color: caption != null ? Colors.black54 : Colors.transparent,
                   child: caption != null
-                      ? Column(
-                          children: [
-                            Text(
-                              caption,
-                              style: TextStyle(
-                                fontSize: 15,
-                                color: Colors.white,
-                              ),
-                              textAlign: TextAlign.center,
-                            ),
-                          ],
+                      ? Text(
+                          caption,
+                          style: TextStyle(
+                            fontSize: 15,
+                            color: Colors.white,
+                          ),
+                          textAlign: TextAlign.center,
                         )
                       : SizedBox(),
                 ),
