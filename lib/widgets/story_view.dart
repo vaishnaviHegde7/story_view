@@ -149,7 +149,7 @@ class StoryItem {
                             Text(
                               caption,
                               style: TextStyle(
-                                  fontSize: 12,
+                                  fontSize: 15,
                                   color: Colors.white,
                                   fontFamily: "poppins"),
                               textAlign: TextAlign.center,
