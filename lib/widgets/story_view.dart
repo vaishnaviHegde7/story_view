@@ -144,30 +144,32 @@ class StoryItem {
                   child: caption != null
                       ? Align(
                           alignment: Alignment.bottomCenter,
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                caption,
-                                style: TextStyle(
-                                    fontSize: 25,
-                                    color: Colors.white,
-                                    fontFamily: "poppins"),
-                                textAlign: TextAlign.center,
-                              ),
-                              SizedBox(
-                                height: 20,
-                              ),
-                              Text(
-                                currency!,
-                                style: TextStyle(
-                                    fontSize: 20,
-                                    color: Colors.white,
-                                    fontFamily: "poppins"),
-                                textAlign: TextAlign.center,
-                              )
-                            ],
+                          child: Container(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(
+                                  caption,
+                                  style: TextStyle(
+                                      fontSize: 25,
+                                      color: Colors.white,
+                                      fontFamily: "poppins"),
+                                  textAlign: TextAlign.center,
+                                ),
+                                SizedBox(
+                                  height: 20,
+                                ),
+                                Text(
+                                  currency!,
+                                  style: TextStyle(
+                                      fontSize: 20,
+                                      color: Colors.white,
+                                      fontFamily: "poppins"),
+                                  textAlign: TextAlign.center,
+                                )
+                              ],
+                            ),
                           ),
                         )
                       : SizedBox(),
